@@ -7,7 +7,7 @@ class ContaSchema(ma.SQLAlchemyAutoSchema):
     operacoes = ma.Nested(
         operacao_schema.OperacaoSchema,
         many=True,
-        only=('nome', 'resumo', 'tipo', 'custo')
+        only=('nome', 'resumo', 'tipo', 'custo', 'data')
     )
     class Meta:
         model = conta_model.Conta
