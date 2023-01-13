@@ -49,7 +49,7 @@ class OperacaoDetail(Resource):
         if operacao is None:
             return make_response(jsonify("Operacao nao encontrada"), 404)
         os = operacao_schema.OperacaoSchema()
-        return make_response(os.jsonify(operacao), 201)
+        return make_response(os.jsonify(operacao), 200)
 
 
     def put(self, id):
