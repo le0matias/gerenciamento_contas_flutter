@@ -43,7 +43,7 @@ class OperacaoList(Resource):
 
 class OperacaoDetail(Resource):
 
-    @user_operacao
+
     def get(self, id):
         operacao = operacao_service.listar_operacao_id(id)
         if operacao is None:
@@ -51,7 +51,7 @@ class OperacaoDetail(Resource):
         os = operacao_schema.OperacaoSchema()
         return make_response(os.jsonify(operacao), 201)
 
-    @user_operacao
+
     def put(self, id):
         operacao_bd = operacao_service.listar_operacao_id(id)
         if operacao_bd is None:
