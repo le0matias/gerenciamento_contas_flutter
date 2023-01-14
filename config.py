@@ -1,4 +1,6 @@
+from dotenv import load_dotenv
 import os
+load_dotenv()
 
 DEBUG=True
 
@@ -9,7 +11,7 @@ DB='contas_flutter'
 
 # SQLALCHEMY_DATABASE_URI=f'mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}'
 
-SQLALCHEMY_DATABASE_URI=os.environ['SQLALCHEMY_DATABASE_URI']
+SQLALCHEMY_DATABASE_URI=os.environ['DATABASE_URL']
 
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
