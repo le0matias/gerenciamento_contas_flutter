@@ -7,7 +7,7 @@ DB='contas_flutter'
 
 # SQLALCHEMY_DATABASE_URI=f'mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}'
 
-SQLALCHEMY_DATABASE_URI=DATABASE_URL
+SQLALCHEMY_DATABASE_URI='postgresql://postgres:0gPte5pMwDMFwbJmCzH5@containers-us-west-127.railway.app:6836/railway'
 
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
